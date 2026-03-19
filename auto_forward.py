@@ -22,7 +22,11 @@ source_channels = [
 
 destination_channel = "@AAUCentral"
 
-client = TelegramClient("new_session", api_id, api_hash)
+from telethon.sessions import StringSession
+
+SESSION = ""
+
+client = TelegramClient(StringSession(SESSION), api_id, api_hash)
 
 # ==========================
 # 🧠 STORAGE
@@ -135,5 +139,14 @@ async def message_handler(event):
 # ==========================
 # 🚀 RUN
 # ==========================
-client.start()
-client.run_until_disconnected()
+import asyncio
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
+async def main():
+    print("🚀 BOT RUNNING ON RAILWAY")
+    await client.run_until_disconnected()
+
+with client:
+    client.loop.run_until_complete(main())
