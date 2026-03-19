@@ -24,7 +24,7 @@ destination_channel = "@AAUCentral"
 
 from telethon.sessions import StringSession
 
-SESSION = ""
+SESSION = "1BJWap1sBu2mvJLznw4s0wFZVea5dgzdSejBlHKPx4Dc9eUCpCdB1ogOurd7LCjIGCILGYA79F6R1MQil1ATt2j5cEOKVKrpA7RT2zpZo5T8sRFkMz6IvRjVZQJZdW9byS3zJ17aR6jdwnoLH9qJoRC96WC5N_QN3m3yaSqFGBS8oE6_OsFro3m7AZQKHPuLxOnH179UcJbbaMOJwRU_S_vcrmdXiHS87_1jdfB8zQyFzskddCrV7Zuq6NXe87lznwc0gSKeEdfnq5L73zFuNV3_yNt6JpMxBGGVWHm8WrKJ02P4tIcg73hJqxXtKjsNruOEw8zwcqsYKIRADiwQLlpRXdzEBLUM="
 
 client = TelegramClient(StringSession(SESSION), api_id, api_hash)
 
